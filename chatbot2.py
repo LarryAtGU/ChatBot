@@ -10,8 +10,10 @@ import os
 
 # Load environment variables from .env file
 # load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+OPENAI_API_KEY = "DUMMY_API_KEY";
 
 # Function to extract text from PDF
 def extract_text_from_pdf(file):
