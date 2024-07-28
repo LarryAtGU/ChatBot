@@ -8,7 +8,9 @@ from langchain_community.chat_models import ChatOpenAI
 import os
 
 # get apikey
-key = os.getenv("OPENAI_API_KEY")
+# key = os.getenv("OPENAI_API_KEY")
+key = st.secrets["OPENAI_API_KEY"]
+
 
 # Upload PDF files
 
