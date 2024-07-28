@@ -13,8 +13,7 @@ import os
 
 # OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-OPENAI_API_KEY = "DUMMY_API_KEY";
-
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 # Function to extract text from PDF
 def extract_text_from_pdf(file):
     pdf_reader = PdfReader(file)
