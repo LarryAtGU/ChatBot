@@ -73,3 +73,5 @@ if file is not None:
         chain = load_qa_chain(llm, chain_type="stuff")
         result = chain.run(input_documents = matches, question = question)
         st.write(result)
+
+
